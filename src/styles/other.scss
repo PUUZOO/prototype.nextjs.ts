@@ -1,0 +1,70 @@
+// =============================================================================
+// Font Size Helper
+// =============================================================================
+@function rem($size) {
+  @return $size / $font-size-base-px + 0rem;
+}
+
+@function em($size, $baseSize: $font-size-base-px) {
+  @return #{$size/$baseSize}em;
+}
+
+@for $i from 1 through 30 {
+  .fs-#{$i} {
+    font-size: rem(1px * $i) !important;
+  }
+}
+
+// GLOBAL
+.bg-transparent {
+  background: transparent;
+}
+.bg-black {
+  background: black;
+}
+.z-i--1 {
+  z-index: 0;
+}
+.z-i-0 {
+  z-index: 0;
+}
+.z-i-1 {
+  z-index: 1;
+}
+.z-i-2 {
+  z-index: 2;
+}
+.overflow-hiden {
+  overflow: hidden;
+}
+.overflow-hiden-y {
+  overflow-y: hidden;
+}
+.l {
+  left: 0;
+}
+.r {
+  right: 0;
+}
+.t {
+  top: 0;
+}
+.b {
+  bottom: 0;
+}
+.cursor-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.opacity-0 {
+  opacity: 0;
+}
+
+// GLOBAL
+:focus {
+  outline: none !important;
+}
+.btn {
+  cursor: pointer;
+}
