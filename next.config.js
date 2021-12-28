@@ -8,7 +8,6 @@ module.exports = (phase, { defaultConfig }) => {
     },
     reactStrictMode: true,
     images: {
-      // domains: ["skate.ru"],
       deviceSizes: [414, 600, 1200],
       loader: "imgix",
       path: process.env.SERVER_HOST,

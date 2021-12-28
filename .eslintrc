@@ -1,3 +1,9 @@
 {
-  "extends": ["next", "next/core-web-vitals"]
+  "extends": ["next", "prettier", "next/core-web-vitals"],
+  "plugins": ["react-hooks"],
+  "rules": {
+    "@next/next/no-img-element": "off",
+    "react-hooks/rules-of-hooks": "error", // Проверяем правила хуков
+    "react-hooks/exhaustive-deps": "warn" // Проверяем зависимости эффекта
+  }
 }

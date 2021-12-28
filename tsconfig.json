@@ -3,10 +3,14 @@
     "baseUrl": "src",
     "paths": {
       "@/components/*": ["components/*"],
+      "@/layout/*": ["components/Layout/*"],
       "@/ui/*": ["ui/*"],
       "@/app/*": ["app/*"],
       "@/tools/*": ["tools/*"],
-      "@/api/*": ["pages/api/*"]
+      "@/pages/*": ["pages/*"],
+      "@/api/*": ["pages/api/*"],
+      "@/config/*": ["config/*"],
+      "@/redux/*": ["redux/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

@@ -2,7 +2,7 @@
 // Font Size Helper
 // =============================================================================
 @function rem($size) {
-  @return $size / $font-size-base-px + 0rem;
+  @return calc($size / $font-size-base-px) + 0rem;
 }
 
 @function em($size, $baseSize: $font-size-base-px) {
